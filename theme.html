@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+    <head>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+        <title>{Title} {block:PostTitle} {PostTitle} {/block:PostTitle}</title>
+
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+		<link rel="stylesheet" href="http://static.tumblr.com/ttz4bff/IPCkg468k/reset.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="https://jimwhimpey.github.io/valhalla-island-styles/style.css" type="text/css" media="screen" charset="utf-8" />
+
+        <meta name="viewport" content="width=920"/>
+        <link rel="apple-touch-icon" href="{PortraitURL-128}"></link>
+
+
+    </head>
+
+    <body>
+
+
+
+		<div id="header">
+			<h1><a href="/">{Title}</a></h1>
+			{block:Description}
+	            <p id="description">{Description}</p>
+	        {/block:Description}
+   		</div>
+
+
+
+
+        <div id="content">
+
+
+            {block:Posts}
+
+
+	            {block:Photoset}
+	                <div class="photoset photo post">
+	                    {block:Photos}
+    	                    {LinkOpenTag}
+    					    	<img src="{PhotoURL-1280}" alt="{PhotoAlt}"/>
+    						{LinkCloseTag}
+	                    {/block:Photos}
+	                    {block:Caption}
+                            <p>{Caption}</p>
+                        {/block:Caption}
+	                    <div class="permalink">
+							<p class="date"><a href="{Permalink}">{Timestamp}</a></p>
+						</div>
+	                </div>
+	            {/block:Photoset}
+
+
+				{block:Quote}
+
+					<div class="quote post">
+
+					    <h2>"{Quote}"</h2>
+
+						{block:Source}
+                            <p>{Source}</p>
+                        {/block:Source}
+
+						<div class="permalink">
+							<p class="date"><a href="{Permalink}">{Timestamp}</a></p>
+						</div>
+
+					</div>
+
+				{/block:Quote}
+
+
+				{block:Photo}
+
+					<div class="photo post">
+
+						{LinkOpenTag}
+					    	<img src="{PhotoURL-1280}" alt="{PhotoAlt}"/>
+						{LinkCloseTag}
+
+						{block:Caption}
+                            <p>{Caption}</p>
+                        {/block:Caption}
+
+						<div class="permalink">
+							<p class="date"><a href="{Permalink}">{Timestamp}</a></p>
+						</div>
+
+					</div>
+
+                {/block:Photo}
+
+
+ 				{block:Video}
+
+					<div class="video post">
+
+						{Video-500}
+
+						{block:Caption}
+                            <p>{Caption}</p>
+                        {/block:Caption}
+
+						<div class="permalink">
+							<p class="date"><a href="{Permalink}">{Timestamp}</a></p>
+						</div>
+
+					</div>
+
+                {/block:Video}
+
+
+				{block:Link}
+
+					<div class="link post">
+
+					    <h2><a href="{URL}" {Target}>{Name}</a></h2>
+
+						{block:Description}
+                            <p>{Description}</p>
+                        {/block:Description}
+
+						<div class="permalink">
+							<p class="date"><a href="{Permalink}">{Timestamp}</a></p>
+						</div>
+					</div>
+
+				{/block:Link}
+
+
+				{block:Chat}
+
+					<div class="conversation post">
+
+						{block:Title}
+                            <h2>{Title}</h2>
+                        {/block:Title}
+
+						<ul>
+							{block:Lines}
+								<li class="member{UserNumber}">
+									{block:Label}
+                                        <span class="label">{Label}</span>
+                                    {/block:Label}
+									{Line}
+								</li>
+							{/block:Lines}
+						</ul>
+
+						<div class="permalink">
+							<p class="date"><a href="{Permalink}">{Timestamp}</a></p>
+						</div>
+
+					</div>
+
+				{/block:Chat}
+
+
+                {block:Text}
+
+                    <div class="text post">
+
+                        {block:Title}
+                            <h2>{Title}</h2>
+                        {/block:Title}
+
+                        {Body}
+
+						<div class="permalink">
+							<p class="date"><a href="{Permalink}">{Timestamp}</a></p>
+						</div>
+
+                    </div>
+
+                {/block:Text}
+
+
+				{block:Audio}
+
+					<div class="post audio">
+
+						{AudioPlayer}
+
+						{block:Caption}
+							<p>{Caption}</p>
+						{/block:Caption}
+
+						{block:ExternalAudio}
+							<p><a href="{ExternalAudioURL}">Download</a></p>
+						{/block:ExternalAudio}
+
+						<div class="permalink">
+							<p class="date"><a href="{Permalink}">{Timestamp}</a></p>
+						</div>
+
+					</div>
+
+				{/block:Audio}
+
+
+			{/block:Posts}
+
+
+
+
+			{block:Pagination}
+
+				<div id="navigation">
+
+{block:NextPage}
+		                <a href="{NextPage}" id="nav-next">&larr; Previous</a>
+		            {/block:NextPage}
+
+		            |
+
+		            {block:PreviousPage}
+	                	<a href="{PreviousPage}" id="nav-prev">Next &rarr;</a>
+		            {/block:PreviousPage}
+
+
+
+				</div>
+
+			 {/block:Pagination}
+
+			{block:PermalinkPagination}
+
+				<div id="navigation">
+
+					{block:PreviousPost}
+	                	<a href="{PreviousPost}" id="nav-prev">&larr; Previous</a>
+		            {/block:PreviousPost}
+
+		            |
+
+		            {block:NextPost}
+		                <a href="{NextPost}" id="nav-next">Next &rarr;</a>
+		            {/block:NextPost}
+
+				</div>
+
+			{/block:PermalinkPagination}
+
+
+
+
+			<!-- Footer -->
+			<div id="footer">
+
+				<form action="/search" method="get" id="searchform">
+					<p><input type="search" placeholder="Search" name="q" value="" results="5" /></p>
+				</form>
+
+				<p id="attribution">
+					<a href="http://www.tumblr.com">Tumblr</a> powered.
+					<a href="http://www.tumblr.com/theme/271">Downpour theme</a> by
+					<a href="http://valhallaisland.com">Jim Whimpey</a>.
+				</p>
+
+			</div>
+
+
+
+
+
+        </div>
+
+    </body>
+
+</html>
