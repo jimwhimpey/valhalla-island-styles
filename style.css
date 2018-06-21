@@ -181,11 +181,11 @@
 				font-family: Menlo, Monaco, Consolas, Courier, monospace;
 				border: 1px solid rgba(255,255,255,0.3);
 				background: rgba(255,255,255,0.1);
-				border-radius: 5px;
-				font-size: 24px;
+				border-radius: 2px;
+				font-size: 14px;
 				padding: 5px 10px;
 				color: rgba(255,255,255,0.5);
-				width: 380px;
+				width: 300px;
 			}
 
 			#searchform input:focus { border: 1px solid rgba(255,255,255,1); }
