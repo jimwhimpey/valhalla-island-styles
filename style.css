@@ -1,0 +1,195 @@
+/* 	++++++++++++++++++++++++
+	FONT
+	++++++++++++++++++++++++ */
+
+	@font-face {
+		font-family: "Lavanderia";
+		src: url("/save/_embed/http://static.tumblr.com/ttz4bff/4ENp024sl/lavanderia-sturdy.otf")
+	}
+
+
+/* 	++++++++++++++++++++++++
+	BODY, WRAPPINGS, ANCHORS, anything sitewide
+	++++++++++++++++++++++++ */
+
+	html {
+		font-size: 13px;
+		}
+
+		body {
+			font-family: Menlo, Monaco, Consolas, Courier, monospace;
+			font-size: 1.2em;
+			line-height: 1.8em;
+			color: #8DA1BD;
+			background: #141721;
+			padding: 5%;
+			width: 90%;
+			max-width: 50em;
+			}
+
+			a { color: #AEF23C; text-decoration: none; }
+
+				a:hover { color: #FBD329; }
+
+/* 	++++++++++++++++++++++++
+	HEADER
+	++++++++++++++++++++++++ */
+
+	#header {
+		margin: 0 0 7em 0;
+		}
+
+		#header h1 {
+			font-family: "Lavanderia";
+			font-size: 90px;
+			font-weight: normal;
+			margin: 50px 0 60px 0;
+			}
+
+			#header h1 a {
+				color: #FF84C7;
+				}
+
+				#header h1 a:hover { color: #FBD329; }
+
+		#description {
+			color: #822B46;
+			margin: 0 0 7em 0;
+			}
+
+			#description a {
+				color: #D34C75;
+				}
+
+				#description a:hover {
+					color: #fff;
+					}
+
+/* 	++++++++++++++++++++++++
+	CONTENT
+	++++++++++++++++++++++++ */
+
+	.post { margin: 0 0 7em 0; }
+
+		.post p,
+		.post h2 { margin: 0 0 0.8em 0; }
+
+		.post h2 {
+			font-size: 26px;
+			line-height: 1.4;
+		}
+
+		.permalink a {
+			padding: 0;
+			color: #597C1D;
+			}
+
+			.permalink a:hover { color: #FBD329; }
+
+/* 	++++++++++++++++++++++++
+	QUOTE
+	++++++++++++++++++++++++ */
+
+	.quote h2 {
+		font-size: 26px;
+		line-height: 1.5;
+		color: #4c6788;;
+		font-style: italic;
+		margin: 0 0 10px 0;
+		}
+
+/* 	++++++++++++++++++++++++
+	PHOTO
+	++++++++++++++++++++++++ */
+
+	.photo img, .photo a img, .video object {
+		border: 2px solid black;
+		width: 100%;
+		margin: 0 0 10px 0;
+		}
+
+/* 	++++++++++++++++++++++++
+	CONVERSATION
+	++++++++++++++++++++++++ */
+
+	#content .conversation {
+		line-height: 2em;
+		}
+
+		.member1 {
+			color: #8DA1BD;
+			}
+
+			.label { color: #999; }
+
+			.member1 .label { color: #FFF; }
+
+
+/* 	++++++++++++++++++++++++
+	TEXT
+	++++++++++++++++++++++++ */
+
+	.text h2, .conversation h2 {
+		color: #fff;
+		margin: 0 0 0.8em 0;
+		font-size: 26px;
+		line-height: 1.5;
+		font-weight: bold;
+		}
+
+	blockquote {
+		margin: 0 0 1.2em 1.5em;
+		padding: 0 0 0 1.5em;
+		border-left: 1px solid #304156;
+		font-style: italic;
+		color: #4e698b;
+		}
+
+	ul {
+		list-style-type: square;
+		margin: 0 0 1.2em 2.5em;
+		}
+
+	ol {
+		list-style-type: decimal;
+		margin: 0 0 1.2em 2.5em;
+		}
+
+	strong { color: white; }
+
+	em { color: white; font-style: italic; }
+
+
+/* 	++++++++++++++++++++++++
+	NAVIGATION
+	++++++++++++++++++++++++ */
+
+	#navigation {
+		height: 1.5em;
+		margin: 0 0 7em 0;
+		}
+
+/* 	++++++++++++++++++++++++
+	FOOTER
+	++++++++++++++++++++++++ */
+
+	#footer { margin: 0 0 7em 0; }
+
+		#searchform { margin: 0 0 2em 0; }
+
+			#searchform input { opacity: 0.2; }
+
+				#searchform input:focus { opacity: 1; }
+
+		#footer a { color: #597C1D; }
+
+			#footer a:hover { color: #FBD329; }
+
+
+/* 	++++++++++++++++++++++++
+	MOBILE MODS
+	++++++++++++++++++++++++ */
+
+	@media only screen and (max-device-width: 480px) {
+		#header h1 { font-size: 40px; }
+	}
