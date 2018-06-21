@@ -209,5 +209,26 @@
 	++++++++++++++++++++++++ */
 
 	@media only screen and (max-device-width: 480px) {
-		#header h1 { font-size: 40px; }
+
+		#header h1 {
+			font-size: 100px;
+			margin: 0;
+			padding: 2em 0;
+		}
+
+		#description {
+			font-size: 14px;
+			line-height: 1.8;
+			margin-bottom: 1em;
+		}
+
+		.post {
+			margin-bottom: 9em;
+		}
+
+		.post p {
+			font-size: 14px;
+			line-height: 1.8;
+		}
+
 	}
