@@ -168,9 +168,9 @@
 		margin: 0 0 1.2em 2.5em;
 		}
 
-	strong { color: white; }
+	strong, b { color: white; }
 
-	em { color: white; font-style: italic; }
+	em, i { color: white; font-style: italic; }
 
 
 /* 	++++++++++++++++++++++++
